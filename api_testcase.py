@@ -1,8 +1,15 @@
 import pytest
-from pip._vendor import requests
+import json
+import requests
 
 base_url ="https://reqres.in/"
 
+
+def get_json_data(json_file):
+    
+    with open(json_file,'r') as f:
+        data = json.load(f)
+    return data 
 
 def test_get_requiest():
     header_type = {'Content-type' : 'Application/json'}
