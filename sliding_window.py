@@ -50,7 +50,7 @@ def get_min_string(s):
    
     return  sub_str, min_len   
 
-def lomgest_substring_of_k_disting_char(s,k):
+def longest_substring_of_k_disting_char(s,k):
     """Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters."""
     sub_str = ''
     max_len = 0
@@ -81,5 +81,5 @@ def get_min_string_of_pattern(s,pt):
 
 
 #print(get_min_string(s1))  
-#print(lomgest_substring_of_k_disting_char(s1,3))       
+#print(longest_substring_of_k_disting_char(s1,3))       
 print(get_min_string_of_pattern("figehaeci", 'aei'))
